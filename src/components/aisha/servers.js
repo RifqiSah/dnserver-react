@@ -25,7 +25,7 @@ export default class servers extends Component {
                                         Patchnote: {s.patchNote}
                                     </p>
                                     <div class="row">
-                                        <div class="col-md-6 col-sm-6" dangerouslySetInnerHTML={{__html: s.server ? '<small class="badge badge-success">Online</small>' : '<small class="badge badge-danger">Maintenance</small>'}}>
+                                        <div class="col-md-6 col-sm-6" dangerouslySetInnerHTML={{__html: s.server === '1' ? '<small class="badge badge-success">Online</small>' : '<small class="badge badge-danger">Maintenance</small>'}}>
                                         </div>
                                         <div class="col-md-6 col-sm-6">
                                             <small class="muted-text">{s.ip}</small>

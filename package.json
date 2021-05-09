@@ -7,9 +7,13 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
+    "node-notifier": "8.0.1",
     "react": "^16.13.0",
+    "react-dev-utils": "11.0.4",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "sockjs": "0.3.20",
+    "ssri": "8.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

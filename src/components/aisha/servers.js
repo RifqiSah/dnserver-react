@@ -15,7 +15,7 @@ export default class servers extends Component {
             .then(res => {
                 const data = res.data
 
-                const servers = data.map((s, i) =>
+                const servers = data.data.map((s, i) =>
                         <div className="col-md-4" key={i}>
                             <div className="card mb-4 box-shadow">
                                 <div className="card-body">

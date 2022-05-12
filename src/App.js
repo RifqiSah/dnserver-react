@@ -3,6 +3,10 @@ import './App.css';
 import Servers from './components/aisha/servers'
 
 function App() {
+  let getYear = () => {
+    let currentYear = new Date().getFullYear();
+    return currentYear;
+  };
   return (
     <div>
       <header>
@@ -16,9 +20,9 @@ function App() {
               <div className="col-sm-4 offset-md-1 py-4">
                 <h4 className="text-white">Kontak</h4>
                 <ul className="list-unstyled">
-                  <li><a href="https://twitter.com/alriftech" className="text-white">Follow on Twitter</a></li>
-                  <li><a href="https://facebook.com/alriftech" className="text-white">Like on Facebook</a></li>
-                  <li><a href="mailto:halo@alriftech.com" className="text-white">Email me</a></li>
+                  <li><a href="https://twitter.com/mrsah_" className="text-white">Follow on Twitter</a></li>
+                  <li><a href="https://web.facebook.com/M.RifqiSaiful.AH" className="text-white">Like on Facebook</a></li>
+                  <li><a href="mailto:me@rifqisah.com" className="text-white">Email me</a></li>
                 </ul>
               </div>
             </div>
@@ -51,9 +55,9 @@ function App() {
       <footer className="text-muted">
         <div className="container">
           <p className="float-right">
-            <a href="//alriftech.com/">Rumah</a>
+            <a href="//rifqisah.com/">Rumah</a>
           </p>
-          <p>&copy; 2020 Alrif Technology. All Rights Reserved.</p>
+          <p>&copy; {getYear()} RifqiSah. Made with ❤️.</p>
         </div>
       </footer>
     </div>

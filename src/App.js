@@ -57,7 +57,7 @@ function App() {
           <p className="float-right">
             <a href="//rifqisah.com/">Rumah</a>
           </p>
-          <p>&copy; {getYear()} RifqiSah. Made with ❤️.</p>
+          <p>&copy; {getYear()}. Made with ❤️ by RifqiSah.</p>
         </div>
       </footer>
     </div>

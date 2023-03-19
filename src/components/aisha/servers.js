@@ -11,7 +11,7 @@ export default class servers extends Component {
 
     getServersData() {
         axios
-            .get(`/server`, {})
+            .get(`/server`, { headers: { apikey: process.env.API_KEY } })
             .then(res => {
                 const data = res.data
 

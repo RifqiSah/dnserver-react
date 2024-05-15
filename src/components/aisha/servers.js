@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import React, { Component } from 'react'
 import axios from '../../axios'
+import moment from 'moment';
 
 export default class servers extends Component {
     constructor(props) {
@@ -23,12 +24,17 @@ export default class servers extends Component {
                                     <h5 className="card-title">{s.longName} (v{s.version})</h5>
                                     <hr />
                                     <p className="card-text">
-                                        News: {s.berita}<br />
-                                        Patchnote: {s.patchNote}<br />
-                                        Servers: {s.ip.split(';').length} servers<br />
+                                        Patched on: {moment(s.patchTime).format('YYYY-MM-DD HH:mm:ss')}<br />
+                                        {/* News: {s.berita}<br /> */}
+                                        {/* Patchnote: {s.patchNote}<br /> */}
+                                        Servers status: { s.server === 1 ? 'Online' : 'Maintenance' }<br />
                                     </p>
                                     <hr />
                                     <div className="row">
+                                        <div className="col-md-12 col-sm-12">
+                                            <small classname="muted-text">{s.ip.split(';').length} servers</small>
+                                        </div>
+                                        <hr />
                                         {s.ip.split(';').map((ip) =>
                                             <>
                                                 <div className="col-md-6 col-sm-6">

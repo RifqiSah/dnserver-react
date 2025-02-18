@@ -32,10 +32,10 @@ export default class servers extends Component {
                                     <hr />
                                     <div className="row">
                                         <div className="col-md-12 col-sm-12">
-                                            <small classname="muted-text">{s.ip.split(';').length} servers</small>
+                                            <small classname="muted-text">{s.configuration.ip.length} servers</small>
                                         </div>
                                         <hr />
-                                        {s.ip.split(';').map((ip) =>
+                                        {s.configuration.ip.map((ip) =>
                                             <>
                                                 <div className="col-md-6 col-sm-6">
                                                     <small className="muted-text">{ip}</small>

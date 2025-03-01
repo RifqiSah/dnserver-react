@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Servers from './components/aisha/servers'
+import Servers from './components/shorekeeper/servers'
 
 function App() {
   let getYear = () => {

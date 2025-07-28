@@ -24,7 +24,7 @@ export default class servers extends Component {
                                     <h5 className="card-title">{s.long_name} (v{s.version})</h5>
                                     <hr />
                                     <p className="card-text">
-                                        Patched on: {moment(s.patchTime).format('YYYY-MM-DD HH:mm:ss')}<br />
+                                        Patched on: {moment(s.patch_time).format('YYYY-MM-DD HH:mm:ss')}<br />
                                         {/* News: {s.berita}<br /> */}
                                         {/* Patchnote: {s.patchNote}<br /> */}
                                         Servers status: { s.server === 1 ? 'Online' : 'Maintenance' }<br />

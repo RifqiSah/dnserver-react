@@ -21,7 +21,7 @@ export default class servers extends Component {
                         <div className="col-md-4" key={i}>
                             <div className="card mb-4 box-shadow">
                                 <div className="card-body">
-                                    <h5 className="card-title">{s.longName} (v{s.version})</h5>
+                                    <h5 className="card-title">{s.long_name} (v{s.version})</h5>
                                     <hr />
                                     <p className="card-text">
                                         Patched on: {moment(s.patchTime).format('YYYY-MM-DD HH:mm:ss')}<br />

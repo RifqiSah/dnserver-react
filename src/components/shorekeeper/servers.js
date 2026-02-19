@@ -13,7 +13,7 @@ export default class servers extends Component {
 
     getServersData() {
         axios
-            .get(`/server`)
+            .get(`/server?game_id=dn`)
             .then(res => {
                 const data = res.data
 
